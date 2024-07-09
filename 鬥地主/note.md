@@ -64,12 +64,15 @@
 - Distributed Training Details
 
     ### Perfect Information Distillation
+    #### 集中-訓練-分散-執行 CTDE( centralized-training-decentralized-execution)
+
         完美資訊蒸餾：在訓練階段，代理商可以利用全局資訊（如其他玩家的手牌）來指導策略的訓練，就像在一個完美資訊遊戲中一樣。而在實際遊戲中，代理人只能使用不完美的資訊來進行決策。
     <!-- ![alt text](image-11.png) -->
     <img src="image-11.png" width="250"><img>
 
 
-    
+    #### 訓練流程
+    訓練時使用 Pefect information, 訓練value network.
 
 
     #### 訓練時 用  Perfect Information Distillation， 推理時用不完美的，那結果不會很差嗎?
@@ -95,6 +98,8 @@
     <img src="image-17.png" width="400"><img>
 
     ### Value network (critic)
+    
+    訓練時會餵給他完美信息，而在推理時不會。
 
     <img src="image-16.png" width="400"><img>
 
